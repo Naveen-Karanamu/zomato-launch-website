@@ -51,6 +51,7 @@ body{
     align-items: center;
     background-color: white;
     box-shadow:1px 1px #0a040440;
+    height: 60px;
     
 }
 
@@ -192,16 +193,26 @@ body{
     gap:10px;
 
 }
-.user_info_email{
+/* .user_info_email{
     background-color:#fcedf0;
     border: 1px solid #ee89a0;
     padding:0 14.5px;
     border-radius: 5px;
     border-width: 1px;
-    
+     */
     /* border-color: none; */
     
 
+/* } */
+
+.input{
+    background: #ea384d;
+    outline: none;
+    font-weight: bolder;
+    border-radius: 4px;
+    padding: 10px;
+    border:none;
+    height: 25px;
 }
 
 
@@ -218,6 +229,7 @@ body{
       align-items: center;
       flex-direction: column;
       justify-content: center;
+      padding:-10px
       
       
 }
@@ -225,18 +237,65 @@ body{
 .brand_name{
     
     width: 100%;
+    padding:0px;
+    text-align: center;
 }
 .brand_logo{
-    width: 100%;
+    width: 70%;
     /* height: 220px; */
     padding: 0 20px;
-    margin: 0;;
+    margin: 0px;
     filter: brightness(0) invert(1);
+}
+.brand_more_info{
+    width: 100%;
+    align-items: center;
+    margin-bottom:10px;
 }
 .info_tag{
     color: #fff;
     margin: 5px;
-    font-weight: 500;
+    font-weight: 400;
+    text-align: center;
+    font-size: 13px;
+}
+
+.quote_container{
+    width:100%;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    position: relative;
+    align-items: center;
+    
+}
+/* .quote_image_parent{
+    width:100%; */
+    
+/* } */
+.quote_image{
+    width:100%;
+    height:190px;
+    border-radius: 10px;
+    /* position: absolute; */
+    filter:blur(1px);
+    
+    
+}
+/* .quote_text_parent{
+    width:100%; */
+    
+/* } */
+
+.quote_text{
+    width:100%;
+    color: #fff;
+    position: absolute;
+    top:50px;
+    text-align: center;
+    font-size: 17px;
+    padding: 15px;
+    /* bottom:; */
+
 }
 
 
@@ -353,6 +412,11 @@ body{
     .input{
         width:300px;
         height: 30px;
+        background: #ea384d;
+        outline: none;
+        font-weight: bolder;
+        padding: 15px;
+        
     }
 
 .user_info{
@@ -387,15 +451,29 @@ body{
 }
 
 .brand_more_info{
-    width: 100%;;
+    width: 100%;
+    align-items: flex-end;
 }
 .info_tag{
     color: #fff;
     margin: 5px;
     font-weight: 500;
     width: 100%;
+    text-align: left;
 
 
+}
+
+.quote_image{
+    height: 300px;
+    border-radius: 20px;
+}
+.quote_text{
+    top:110px;
+    font-size: 30px;
+    padding:0 25px;
+    text-align: center;
+}
 }
 
 
@@ -406,6 +484,9 @@ body{
     }
     .container{
         max-width: 1100px;
+    }
+    #blobSvg{
+        top:-45px;
     }
 
     .hero_container{
@@ -450,7 +531,7 @@ body{
         justify-content: flex-start;
     }
     .updates_container_discription{
-    padding: 0 65px;
+    padding: 0 115px;
     }
     .user_info{
         gap:20px;
@@ -459,11 +540,43 @@ body{
     .input{
         width: 350px;
         height: 32px;
-        padding: 0;
+        padding: 15px;
     }
 
+    .footer{
+        justify-content: space-evenly;
+        padding: 0 50px;
+        text-align: center;
+    }
+    .brand_more_info{
+        width:100%;
+    }
+    .brand_name{
+        width:100%;
+        padding: 0 25px;
+
+    }
+    .info_tag{
+        width: auto;
+        padding-left: 100px;
+
+    }
+    .brand_logo{
+        width: 80%;
+        height:150px;
+        text-align: center;
+    }
+
+    .quote_image{
+        height:350px ;
+    }
+    .quote_text{
+        top:145px;
+    }
+
+
     
-}}
+}
 
 @media (min-width:1400px){
 
@@ -472,6 +585,16 @@ body{
         
         
     }
+    .hero_image_container{
+        position: relative;
+    }
+    #blobSvg{
+        position: absolute;
+        top:-50px;
+    }
+
+
+
     .explore_menu_container{
 
         margin-top: 100px;
@@ -490,6 +613,7 @@ body{
     .input{
         width: 450px;
         height: 38px;
+        padding: 15px;
     }
     .updates_container_discription{
         margin-bottom: 8px;
@@ -498,19 +622,30 @@ body{
 
     .footer{
         justify-content: space-evenly;
+        
     }
     .brand_more_info{
-        width:50%;
+        width:100%;
+    }
+    .brand_name{
+        width:100%;
+        
+        /* padding:-100px 20px; */
     }
 
     .brand_logo{
-        width: 300px;
+        width: 80%;
+        height: 180px;
         /* padding-left: 100px; */
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     .info_tag{
-        font-size: 15px;
+        width: 100%;
+        /* font-size: 15px; */
+        padding-left: 200px;
+        font-size: 18px;
     }
 
 
